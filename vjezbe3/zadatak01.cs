@@ -13,7 +13,7 @@ namespace vjezbe3
             else if (n < 0)
                 Console.WriteLine("\nBroj {0} je negativan.", n);
             else
-                Console.WriteLine("\nBroj je 0.");
+                Console.WriteLine("\nUnijeli ste 0.");
         }
     }
 }
