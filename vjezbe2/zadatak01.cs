@@ -1,6 +1,6 @@
 using System;
 
-namespace vjezbe1
+namespace vjezbe2
 { 
     class zadatak
     {
