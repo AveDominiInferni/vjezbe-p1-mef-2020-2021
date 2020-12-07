@@ -20,10 +20,10 @@ namespace vjezbe5
             int cijeli_broj;
             int[] niz = new int[10];
             Random rnd = new Random();
-            Console.WriteLine("Unesite 5 cijelih brojeva:");
+            Console.WriteLine("Unesite polovinu ukupnog broja elemenata niza");
             for (int i = 0; i < 5; i++)
             {
-                Console.Write("Broj {0}: ", i + 1);
+                Console.Write("Unesite broj: ");
                 string unos = Console.ReadLine();
                 if (Int32.TryParse(unos, out cijeli_broj))
                 {
@@ -31,7 +31,7 @@ namespace vjezbe5
                 }
                 else
                 {
-                    Console.WriteLine("Unesena vrijednost \"{0}\" nije cijeli broj! Pokusajte ponovo.", unos);
+                    Console.WriteLine("Unesena vrijednost {0} nije cijeli broj!", unos);
                     i--;
                 }
             }
