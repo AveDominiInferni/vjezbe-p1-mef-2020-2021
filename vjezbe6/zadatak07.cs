@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 
 namespace vjezbe6
 { 
     class zadatak
     {
-        static int[] KopiranjeNizova(int[] niz)
+        static int[] KopiranjeNizova(int[] niz) // nije bilo potrebe da je koristimo
         {
             int[] kopija = new int[niz.Length];
             for (int i = 0; i < niz.Length; i++)
@@ -17,7 +17,7 @@ namespace vjezbe6
             a = b;
             b = temp;
         }
-        static void BubbleSort(ref int[] niz)
+        static int[] SortiranjeNizova(int[] niz) 
         {
             bool sortiran;
             do
@@ -32,6 +32,7 @@ namespace vjezbe6
                     }
                 }
             } while (!sortiran);
+            return niz;
         }
         static void IspisNizova(int[] niz)
         {
@@ -49,8 +50,7 @@ namespace vjezbe6
                 niz[i] = rnd.Next(-10, 51);
             Console.WriteLine("\nPrvi niz:");
             IspisNizova(niz);
-            int[] kopija = KopiranjeNizova(niz);
-            BubbleSort(ref kopija);
+            int[] kopija = SortiranjeNizova(niz);
             Console.WriteLine("\nDrugi niz:");
             IspisNizova(kopija);
         }
